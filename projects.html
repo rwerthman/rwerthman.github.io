@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div id="navBar">
+    </div>
+    <script>
+        $(function(){
+            $("#navBar").load("navbar.html");
+        });
+        $('#pr').addClass('active');
+        $('#ab, #re, #co').removeClass('active');
+    </script>
+<div id="projects">
+    <div id="mlProject">
+        <h2>Machine learning project that was used to predict authors based on text from them.</h2>
+        <h3>Made with Python, scikit-learn, numpy, SQLite, Flask</h3>
+        <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/author_prediction'>
+            <img src='gifs/ap_project.gif' width='1100' height='600'>
+        </a>
+    </div>
+    <div id="helicopterProject">
+        <h2>Computer graphics project that is a helicopter flying around that you can control</h2>
+        <h3>Made with C/C++, OpenGL</h3>
+        <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/helicopter_flying'>
+            <img src='gifs/helicopter_project.gif' width='1100' height='600'>
+        </a>
+    </div>
+    <div id="ngProject">
+        <h2>Study program that was used to learn the streets and landmarks in the City of Northglenn</h2>
+        <h3>Made with Javascript, HTML, CSS, JQuery, QUnit, Node js</h3>
+        <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/ng_geo'>
+            <img src='gifs/ng_project.gif' width='1100' height='600'>
+        </a>
+    </div>
+    <div id="hotelProject">
+        <h2>Object Oriented Design project that is supposed to simulate a hotel control system</h2>
+        <h3>Made with C++ and rpclib</h3>
+        <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/hotel_control_system'>
+            <img src='gifs/hotel_project.gif' width='1100' height='600'>
+        </a>
+    </div>
+</div>
+</body>
+</html>
