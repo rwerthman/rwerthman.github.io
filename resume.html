@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="navBar">
+    </div>
+    <script>
+        $(function(){
+            $("#navBar").load("navbar.html");
+        });
+        $('#re').addClass('active');
+        $('#ab, #pr, #co').removeClass('active');
+    </script>
+    <div id="resume">
+        <embed src='resume/resume.pdf' type='application/pdf' height='800' width='800'>
+    </div>
+</body>
+</html>

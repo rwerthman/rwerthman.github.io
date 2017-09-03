@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="navBar">
+    </div>
+    <script>
+        $(function(){
+            $("#navBar").load("navbar.html");
+        });
+        $('#co').addClass('active');
+        $('#ab, #re, #pr').removeClass('active');
+    </script>
+    <div style="display:none" id="contact">
+        You can contact me at <a href='mailto:robert.werthman@colorado.edu'>robert.werthman@colorado.edu</a>
+    </div>
+</body>
+</html>
