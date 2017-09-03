@@ -13,8 +13,10 @@
         $(function(){
             $("#navBar").load("navbar.html");
         });
-        $('#co').addClass('active');
-        $('#ab, #re, #pr').removeClass('active');
+        $( document ).ajaxComplete(function() {
+            $('#co').addClass('active');
+            $('#ab, #re, #pr').removeClass('active');
+        });
     </script>
     <div id="contact">
         You can contact me at <a href='mailto:robert.werthman@colorado.edu'>robert.werthman@colorado.edu</a>

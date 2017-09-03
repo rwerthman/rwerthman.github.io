@@ -9,14 +9,16 @@
 </head>
 
 <body>
-    <div id="navBar">
+    <div id="navBarHolder">
     </div>
     <script>
         $(function(){
-            $("#navBar").load("navbar.html");
+            $("#navBarHolder").load("navbar.html #navBar");
         });
-        $('#pr').addClass('active');
-        $('#ab, #re, #co').removeClass('active');
+        $( document ).ajaxComplete(function() {
+            $('#pr').addClass('active');
+            $('#ab, #re, #co').removeClass('active');
+        });
     </script>
 <div id="projects">
     <div id="mlProject">

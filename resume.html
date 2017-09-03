@@ -13,8 +13,10 @@
         $(function(){
             $("#navBar").load("navbar.html");
         });
-        $('#re').addClass('active');
-        $('#ab, #pr, #co').removeClass('active');
+        $( document ).ajaxComplete(function() {
+            $('#re').addClass('active');
+            $('#ab, #pr, #co').removeClass('active');
+        });
     </script>
     <div id="resume">
         <embed src='resume/resume.pdf' type='application/pdf' height='800' width='800'>
