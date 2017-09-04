@@ -2,87 +2,26 @@
 
 <html>
     <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <!-- <script>
-        $(document).ready(function(){
-            $('#ab').click(function() {
-                $('#aboutMe').show().addClass('active');
-                $('#projects, #resume, #contact').hide();
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="navBarHolder">
+        </div>
+        <script>
+            $(function(){
+                $("#navBarHolder").load("navbar.html #navBar");
+            });
+            $( document ).ajaxComplete(function() {
                 $('#ab').addClass('active');
                 $('#pr, #re, #co').removeClass('active');
             });
-            $('#pr').click(function() {
-                $('#projects').show();
-                $('#aboutMe, #resume, #contact').hide();
-                $('#pr').addClass('active');
-                $('#ab, #re, #co').removeClass('active');
-            });
-            $('#re').click(function() {
-                $('#resume').show();
-                $('#aboutMe, #projects, #contact').hide();
-                $('#re').addClass('active');
-                $('#ab, #pr, #co').removeClass('active');
-            });
-            $('#co').click(function() {
-                $('#contact').show();
-                $('#aboutMe, #projects, #resume').hide();
-                $('#co').addClass('active');
-                $('#ab, #re, #pr').removeClass('active');
-            });
-        });
-    </script> -->
-    <head>
-<body>
-
-    <!-- <div id="navBar">
-        <a id='ab' class='active' href="aboutme.html">About Me</a>
-        <a id='pr' href="projects.html">Projects</a>
-        <a id='re' href="javascript:void(0);">Resume</a>
-        <a id='co' href="javascript:void(0);">Contact</a>
-    </div> -->
-
-    <!-- <div id="pageContent">
-        <div id="aboutMe">
+        </script>
+        <div id='pageContent'>
+        <div>
             Hello!  My name is Robert and I am an aspiring software developer.  I'm interested in working on anything and everything related to software.
         </div>
-        <div style="display:none" id="projects">
-            <div id="mlProject">
-                <h2>Machine learning project that was used to predict authors based on text from them.</h2>
-                <h3>Made with Python, scikit-learn, numpy, SQLite, Flask</h3>
-                <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/author_prediction'>
-                    <img src='gifs/ap_project.gif' width='1100' height='600'>
-                </a>
-            </div>
-            <div id="helicopterProject">
-                <h2>Computer graphics project that is a helicopter flying around that you can control</h2>
-                <h3>Made with C/C++, OpenGL</h3>
-                <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/helicopter_flying'>
-                    <img src='gifs/helicopter_project.gif' width='1100' height='600'>
-                </a>
-            </div>
-            <div id="ngProject">
-                <h2>Study program that was used to learn the streets and landmarks in the City of Northglenn</h2>
-                <h3>Made with Javascript, HTML, CSS, JQuery, QUnit, Node js</h3>
-                <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/ng_geo'>
-                    <img src='gifs/ng_project.gif' width='1100' height='600'>
-                </a>
-            </div>
-            <div id="hotelProject">
-                <h2>Object Oriented Design project that is supposed to simulate a hotel control system</h2>
-                <h3>Made with C++ and rpclib</h3>
-                <a target='_blank' href='https://github.com/rwerthman/main_projects/tree/master/hotel_control_system'>
-                    <img src='gifs/hotel_project.gif' width='1100' height='600'>
-                </a>
-            </div>
-        </div>
-        <div style="display:none" id="resume">
-            <embed src='resume/resume.pdf' type='application/pdf' height='800' width='800'>
-        </div>
-        <div style="display:none" id="contact">
-            You can contact me at <a href='mailto:robert.werthman@colorado.edu'>robert.werthman@colorado.edu</a>
-        </div>
-    </div> -->
+    </div>
+    </body>
 
-</body>
 </html>
