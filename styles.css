@@ -6,6 +6,10 @@ body {
     text-align: center;
 }
 
+#selfie {
+    border-radius: 50%;
+}
+
 #pageContent {
     margin-top: 30px;
     font-family: roboto_black;
