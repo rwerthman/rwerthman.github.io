@@ -59,3 +59,8 @@ body {
     font-family: roboto_bold;
     src: url("../fonts/Roboto-Bold.ttf");
 }
+
+#map {
+    width: 400px;
+    height: 300px;
+}
