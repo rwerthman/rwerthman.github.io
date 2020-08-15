@@ -1,66 +1,9 @@
 body {
-    margin: 0px;
-}
-
-#aboutme, #contact, #resume, #projects {
-    text-align: center;
-}
-
-#selfie {
-    border-radius: 50%;
-}
-
-#pageContent {
-    margin-top: 30px;
-    font-family: roboto_black;
-}
-
-#navBar {
-    position: fixed;
-    width: 100%;
-    top: 0px;
-    background-color: #333;
-}
-
-#navBar a {
-    text-decoration: none;
-    padding: 5px 5px;
-    color: #f2f2f2;
-    font-size: 17px;
-    float: left;
-    padding: 5px;
-    font-family: roboto_black;
-}
-
-#navBar a:hover {
-    background-color: grey;
-}
-
-#navBar a.active {
-    background-color: grey;
-}
-
-@font-face {
-    font-family: roboto_black;
-    src: url("../fonts/Roboto-Black.ttf");
-}
-
-@font-face {
-    font-family: roboto_regular;
-    src: url("../fonts/Roboto-Regular.ttf");
-}
-
-@font-face {
-    font-family: roboto_light;
-    src: url("../fonts/Roboto-Light.ttf");
-}
-
-@font-face {
-    font-family: roboto_bold;
-    src: url("../fonts/Roboto-Bold.ttf");
+    margin: 0;
+    padding: 0;
 }
 
 #map {
     width: 400px;
-    height: 300px;
+    height: 400px;
 }
