@@ -12,37 +12,90 @@
     </figure>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="citystreets.html">CityStreets</a>
+        <button class="active" id="workTimelineButton" onclick="showWorkTimeline()">Work</button>
+        <button id="educationTimelineButton" onclick="showEducationTimeline()">Education</button>
     </nav>
 
-    <div class="timeline">
+    <div class="timeline" id="work_timeline">
         <div class="event right">
             <div class="content">
-                <h2>Garmin</h2>
+                <h3>2019 - Present</h3>
+                <a href="https://discover.garmin.com/en-US/aoem/">
+                    <img src='images/garmin_logo.jpg' alt='picture of garmin logo' width="100px">
+                </a>
                 <p>This is when I worked garmin</p>
             </div>
         </div>
         <div class="event left">
             <div class="content">
-                <h2>Continental</h2>
+                <h3>2017 - 2019</h3>
+                <a href="https://conti-engineering.com/">
+                    <img src='images/continental_logo.png' alt='picture of continental logo' width="100px">
+                </a>
                 <p>This is when I worked continental</p>
             </div>
         </div>
         <div class="event right">
             <div class="content">
-                <h2>Northglenn</h2>
+                <h3>2017</h3>
+                <a href="https://www.northglenn.org/public_safety/police/">
+                    <img src='images/northglenn_logo.png' alt='picture of northglenn logo' width="50px">
+                </a>
                 <p>This is when I worked northglenn</p>
             </div>
         </div>
         <div class="event left">
             <div class="content">
-                <h2>US Army</h2>
+                <h3>2015 - 2016</h3>
+                <a href="https://peering.google.com/#/">
+                    <img src='images/google_logo.png' alt='picture of google logo' width="100px">
+                </a>
+                <p>This is when I worked for google</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content">
+                <h3>2017</h3>
+                <a href="https://www.mentor.com/">
+                    <img src='images/mentor_logo.jpeg' alt='picture of mentor graphics logo' width="100px">
+                </a>
+                <p>This is when I worked mentor graphics</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content">
+                <h3>2007 - 2012</h3>
+                <a href="https://www.goarmy.com/ranger/about-the-army-rangers/army-ranger-battalions.html">
+                    <img src='images/ranger_logo.png' alt='picture of us army ranger logo' width="100px">
+                </a>
                 <p>This is when I worked in the Army</p>
             </div>
         </div>
     </div>
+
+    <div class="timeline" id="education_timeline" style="display: none;">
+        <div class="event right">
+            <div class="content">
+                <h3>2017 - Present</h3>
+                <a href="https://umdearborn.edu/cecs/departments/electrical-and-computer-engineering/graduate-programs/mse-computer-engineering">
+                    <img src='images/umich_logo.jpg' alt='picture of umich logo' width="50px">
+                </a>
+                <p>This is when I went to school at umich</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content">
+                <h3>2012 - 2016</h3>
+                <a href="https://www.colorado.edu/cs/academics/undergraduate-programs/bachelors-accelerated-masters">
+                    <img src='images/boulder_logo.png' alt='picture of cu boulder logo' width="100px">
+                </a>
+                <p>This is when I went to school at boulder</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="scripts/buttons.js"></script>
 </body>
 
 </html>
