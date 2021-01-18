@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-
 <html>
-    <head>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="projects.html">Projects</a>
-            <a href="resume.html">Resume</a>
-            <a href="citystreets.html">CityStreets</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </head>
-    <body>
-        <section>
-            <h5>My name is Robert and I am currently a software developer working in the automotive field.</h5>
-            <figure>
-                <img src='images/self.jpg' alt='picture of self' width="400px">
-                <figcaption>This photo was taken at Badlands National Park in South Dakota.</figcaption>
-            </figure>
-        </section>
-    </body>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/timeline.css">
+</head>
+
+<body class="flex_container">
+    <figure id="selfie_figure">
+        <img src='images/self.jpg' alt='picture of self' id='selfie_img' title="This photo was taken at Badlands National Park in South Dakota.">
+    </figure>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="citystreets.html">CityStreets</a>
+    </nav>
+
+    <div class="timeline">
+        <div class="event right">
+            <div class="content">
+                <h2>Garmin</h2>
+                <p>This is when I worked garmin</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content">
+                <h2>Continental</h2>
+                <p>This is when I worked continental</p>
+            </div>
+        </div>
+        <div class="event right">
+            <div class="content">
+                <h2>Northglenn</h2>
+                <p>This is when I worked northglenn</p>
+            </div>
+        </div>
+        <div class="event left">
+            <div class="content">
+                <h2>US Army</h2>
+                <p>This is when I worked in the Army</p>
+            </div>
+        </div>
+    </div>
+</body>
+
 </html>
