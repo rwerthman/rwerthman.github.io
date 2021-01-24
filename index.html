@@ -14,8 +14,9 @@
     </figure>
 
     <nav>
-        <button class="active" id="workTimelineButton" onclick="showWorkTimeline()">Work</button>
+        <button class="active" id="workTimelineButton" onclick="showWorkTimeline()">Work Experience</button>
         <button id="educationTimelineButton" onclick="showEducationTimeline()">Education</button>
+        <button id="personalProjectsButton" onclick="showPersonalProjects()">Personal Projects</button>
     </nav>
 
     <div class="timeline" id="work_timeline">
@@ -25,7 +26,25 @@
                 <a href="https://discover.garmin.com/en-US/aoem/">
                     <img src='images/garmin_logo.jpg' alt='picture of garmin logo' width="100px">
                 </a>
-                <p>This is when I worked garmin</p>
+                <p>I left Continental and started work at Garmin. I Garmin Foretrex 601 so I knew Garmin had GPS products but didn't realize they did anything in the automotive other than those personal navigation devices (PNDs) you can set up in your car.
+                    They work with some OEMs like Ford and putting the navigaiton in the infotainment system. I'm currently working the navigation application in one such infotainment systems. The application itself is based in QT and C++ with the user
+                    interface (UI) done in QML/Javascript. I dabbled in Javascript working on my personal project CityStreets and my personal website so had some familiarity. This was my first time working on UI tasks. It took time and a lot help to understand
+                    how QML worked and given user experience (UX) document and wireframes create soemthing the user can interact with.
+                </p>
+                <p>
+                    Other than fixing defects and implementing some minor features, my main contribution has been working on a feature having to do with cloud based trips. A user can create trip on their phone and then the trip is downloaded to the navigation application
+                    in the car and shown in the UI. The user can modify the trip in the phone or navigation application and those updates are synchronized. Garmin's responsibility was receving the trip in the vehicle, showing it in the UI, and synchronizing
+                    changes made in the vehicle and on the phone. The feature was initially started by 2 developers but not fully completed before they left the company. I took the feature over and had to make quite a few changes. It took a long time
+                    to get cloud to vehicle testing working. This exposed defects in both how the trip data was process and the contents of the trip data sent to and from the vehicle. I used UML diagrams and flowcharts to document architecture changes
+                    so the customer would understand how our side was functioning. I work closely with the customer and was involved in vehicle test drives to ensure Garmin captured what the customer wanted done and what the users would like to see done
+                    with this feature. I learned the value of logging from Continental where the only way to get a sense of the state of the ECU was to view the logs. This was pivotal because this particular feature is testing in vehicles and logs may
+                    be the only things you have to troubleshoot issues.
+                </p>
+                <p>
+                    I also act as the first person to process crashes--and soemtimes fix them--when we receive core dumps from the customer. One of the things I was happy about was getting the navigation applciation executable built with debug symbols and then having them
+                    stripped out. For some reason we weren't doing that and could only get the function name of where the crash occurred. This led to people causing on what the problematic code could be. Now, when we get a core dump file we can then take
+                    these symbols and get the line numbers of where the crash occurred. This wasn't the case before and I'm glad we have this now because root causing what caused a crash is much easier.
+                </p>
             </div>
         </div>
         <div class="event left">
@@ -34,7 +53,26 @@
                 <a href="https://conti-engineering.com/">
                     <img src='images/continental_logo.png' alt='picture of continental logo' width="100px">
                 </a>
-                <p>This is when I worked continental</p>
+                <p>This was my first real software development job. This is also where I first learned how to solder and used an oscilloscope. I learned how to used Jira and Gerrit. Continental is an automtive supplier so they create things like tires, brakes,
+                    clusters, and other electronics to sell to the original equipment manufacturers (OEMs) like Ford. I worked continental engineering services (CES) team and were tasked mainly to research and develop products for smaller car manufacturers
+                    who didn't sell as many cars as say Ford or Toyota.</p>
+                <p>
+                    My first project was working on an audio head unit (AHU) for Ford--it was eventually cancelled. I work in C on the diagnostics. Diagnostics provide information about what is going on in the hardware. Some things reported by diagnotics are whether the
+                    antenna is connected and what the signal strength is. Diagnostics are important because, for Ford anyways, electronics control unit (ECU) had to have the diagnotics certified to a standard. The ECU had to start up in certain amount
+                    of time and had to report all the required diagnotics in a certian amount of time. My effort was focused on accomplished that. Really for the diagnostics of an ECU to be complete all the features of the ECU need to be complete. This
+                    means I needed to work with all the teams working on the various features. The thing about the AHU was that the features were done around the world: the radio application was being done in Mexico, the audio application was being done
+                    in Romania, some stuff was done in Germany, etc. That was where the subject matter experts were. I travelled to Mexico to work with the team there on some of the diagnostics. Some of the Romanian team came to work on the audio features
+                    and diagnostics. We had at least 1 planning workshop where all the teams met in one place to plan the next part of the process.
+                </p>
+                <p>
+                    This is also my first experience with a project not going well. The project was delayed from the beginning and we were having problems meeting deadlines. There were daily meetings with customer going through tickets. I presented multiple times updates
+                    about the status of diagnostics.
+                </p>
+
+                <p>
+                    Like I said the AHU project was cancelled and I moved on to the TCU project. I think it was the 3rd generation so it was in a much better state. But it was not without its problems. One significant problem was it would sometimes not be able to updated
+                    and it would be stuck until you erased everything and started over.
+                </p>
             </div>
         </div>
         <div class="event right">
@@ -43,7 +81,17 @@
                 <a href="https://www.northglenn.org/public_safety/police/">
                     <img src='images/northglenn_logo.png' alt='picture of northglenn logo' width="50px">
                 </a>
-                <p>This is when I worked northglenn</p>
+                <p>Before graduating I wasn't sure about doing software development. I still wanted to serve the community in some physical capacity and I thought being a police officer would be rewarding like that. With this in mind I applied to be a police
+                    officer instead of a software developer before graduating. I applied to a lot of different places and the process is long but finally the Northglenn Police Department accepted me.</p>
+                <p>
+                    I trained at the Adams County Sheriff's Office Academy for 6 months. I learned a lot about the laws, firearms, defensive tactics, and driving. I really liked the instructors and other students, they had a lot experience and were very motivated. One of
+                    the things we had to know was the geography of Northglenn. We had to pass written tests that tested our memorization of the streets in Northglenn. This is when I came up with my CityStreets project which helped me and the other new
+                    officers for Northglenn memorize the streets. Needless to say, we did well on the tests.
+                </p>
+                <p>
+                    After the police academy, Northglenn had there own in-house academy to get know the procedures of the police department. I thought the officers, especially the Chief, at Northglenn were very good. I didn't end up working as a police officer for very long
+                    and moved to Michigan.
+                </p>
             </div>
         </div>
         <div class="event left">
@@ -52,7 +100,24 @@
                 <a href="https://peering.google.com/#/">
                     <img src='images/google_logo.png' alt='picture of google logo' width="100px">
                 </a>
-                <p>This is when I worked for google</p>
+                <p>I worked part-time at Google. I thought it was a great opportunity. As a software developer Google was the ideal place to be--they had great benefits and they worked on the bleeding edge. Although my role was not really software development.
+                    I mostly managed a trouble ticket queue having to do with issues with network servers. Typically we would get tickets about hard failures or the network not working. They had a lot of automated problem detection which streamlined the
+                    accurate reporting of issues.</p>
+
+                <p> One other apprentice had an idea to automate some of the handling of the hardware related tickets like disk or memory failures. Typically for those the automation software would report the errors and open trouble ticket. We would then
+                    start a conversation with person managing the server, try basic troubleshooting steps, and order replacements and have them sent to where the servers were located. The idea was to automate the whole process including the asking the
+                    customer questions. Using python we were able to get a basic implementation working. The other apprentice went on to try using machine learning to make it even better. I worked to automate some of the other hardware issues like memory
+                    failure.
+                </p>
+
+                <p> There would also be networking issues that were a little bit more complex to troubleshoot then the hardware failures. There wasn't really any automation software to determine the root cause of a network failure. One apprentice was given
+                    a task to write a script to query a database to get some information about a server. They weren't able to make progress so I volunteered to take over the task. In this case there were libraries available to use but the APIs were in
+                    C++. The team I was on did not have anyone qualified to review C++ code changes so I had to work with other people on other teams to get the script done. The API documentation was also good and this helped a lot.
+                </p>
+
+                <p>
+                    Google taught me the importance of testing. Any code that was going to be commited to the code base had to have tests.
+                </p>
             </div>
         </div>
         <div class="event right">
@@ -61,7 +126,11 @@
                 <a href="https://www.mentor.com/">
                     <img src='images/mentor_logo.jpeg' alt='picture of mentor graphics logo' width="100px">
                 </a>
-                <p>This is when I worked mentor graphics</p>
+                <p>Mentor Graphics was my first internship in college. I worked mostly in Java and Python. I was on the infrastructure team working on securing an application used in various office. A user in one office could upload a printed circuit board
+                    (PCB) schematic to be viewed in another office--at least that is how I understood it. One task was to digitally sign messages from the server to the applicattion. I wrote a Java program that would create and load keys that could be
+                    used for this process. I also had a task to fix some issues with compiling the program--I remember completing that task using python.</p>
+                <p>This was my first exposure to Agile software development, daily standups, estimating tasks, and having 2 weeks to work on each task.
+                </p>
             </div>
         </div>
         <div class="event left">
@@ -70,7 +139,20 @@
                 <a href="https://www.goarmy.com/ranger/about-the-army-rangers/army-ranger-battalions.html">
                     <img src='images/ranger_logo.png' alt='picture of us army ranger logo' width="100px">
                 </a>
-                <p>This is when I worked in the Army</p>
+                <p>I joined the US Army out of high school. I originally wanted to do Special Forces but I didn't meet the age requirement. I signed a contract to try out for the Ranger's. My military occupational specialty was 11x but was changed to 11c
+                    when I got to basic training. 11c is for indirect fire infantryman, also known as a mortar man. I completed basic training, advanced individual training (AIT), and airborne school. I went through the ranger indocrtrination program
+                    (RIP), now know as ranger assessment and selection program (RASP).
+                </p>
+
+                <p>
+                    I was stationed at Ft. Lewis in Washington State while I was in the army. I did 4 4-month deployments: 3 to Afghanistan and 1 to Iraq. I served in various capacities while deployed: m240 bravo machine gun ammo bearer, 60mm mortar ammo bearer, radio telephone
+                    operator (RTO), and eventually 3-man mortar team leader. The tempo was to train for 8 months and then deploy. The training involved jumping out of planes and seizing airfields, fast roping from helicopters, night raids, shooting, etc.
+                    really anything we might have to do while deployed.
+                </p>
+
+                <p>
+                    Eventually my enlistment contract was up and I decided to go to college.
+                </p>
             </div>
         </div>
     </div>
@@ -82,7 +164,8 @@
                 <a href="https://umdearborn.edu/cecs/departments/electrical-and-computer-engineering/graduate-programs/mse-computer-engineering">
                     <img src='images/umich_logo.jpg' alt='picture of umich logo' width="100px" height="100px">
                 </a>
-                <p>This is when I went to school at umich</p>
+                <p>I decided to go back to school and get a Master's in Computer Engineering because I realized at Continental by knowledge of electrical side of computers was lacking. I worked a little bit on my own with microcontrollers but never really
+                    with circuits and didn't really understand them. By going back to school I hope to fill that knowledge gap.</p>
             </div>
         </div>
         <div class="event left">
@@ -91,8 +174,50 @@
                 <a href="https://www.colorado.edu/cs/academics/undergraduate-programs/bachelors-accelerated-masters">
                     <img src='images/boulder_logo.jpg' alt='picture of cu boulder logo' width="100px" height="51px">
                 </a>
-                <p>This is when I went to school at boulder</p>
+                <p>I started at the University of Colorado Boulder the Fall after I left the Army. I started in Political Science but quickly change to Computer Science because I saw how you could create some useful to people and all you needed was a computer
+                    to do it. It was difficult at first because I had never really understood how computers worked and had never written any code. Plus it had been a while since I had done any math or science related work. But with help from professors
+                    and other students I was able to be successful.</p>
+                <p>At first I was only working on y Bachelor's but I saw they had a program where you could get both a Bachelor's and Master's at almost the same time--some classes could be carried over to the Master's degree. I signed up for a Bachelor's
+                    in Computer Science and Master's in Telecommunications. I liked learning about Telecommunications policy--at the time there was the debate about Net Neutrality going on--and networking. This helped me when I apprenticed at Google.
+                    But I still wanted to learn more of the concepts related to Computer Science like machine learning, so I switched to a Master's in Computer Science.</p>
+                <p>
+                    Some of the classes I enjoyed were my Computer Graphics class where I made a 3rd person helicopter game where you could fly around and blow up buildings and trees and linear programming where I made a sudoku solver.
+                </p>
             </div>
+        </div>
+    </div>
+
+    <div id="personal_projects" style="display: none;">
+        <div class="content">
+            <h3>City Streets</h3>
+            <a href="https://github.com/rwerthman/CityStreets">
+                <img src='images/citystreets.jpg' alt='logo for citystreets program' width="100px">
+            </a>
+            <p>
+                This was a project that came out of the necessity to learn the streets of the city I was going to be a police officer in. The other officers and I found it very useful to memorize the streets and we did well on the tests. I have to rewrite in using MapBox
+                and OpenStreetMap because the Google Maps API is not free anymore. I have to get back the functionality and then figure out how to scale it. I want to turn it into something other police departments use to train their police candidates.
+            </p>
+            <p> It is written in HTML, CSS, and Javascript.</p>
+        </div>
+
+        <div class="content">
+            <h3>Rogue Instock</h3>
+            <a href="https://github.com/rwerthman/rogue_instock">
+                <img src='images/rogue_logo.png' alt='logo for rogue instock program' width="100px">
+            </a>
+            <p>It has been difficult to get workout equipment due to Covid-19. Inspired by <a href="https://roguestockbot.com/">RogueStockBot</a> I created a python script that would check if the equipment you were looking for was in stock. If it was it
+                would use Twilio to send a text message to your phone.</p>
+        </div>
+
+        <div class="content">
+            <h3>Kroger Coupon Clicker</h3>
+            <a href="https://github.com/rwerthman/ks_coupon_clicker">
+                <img src='images/krogor_logo.png' alt='logo for kroger coupon clicker program' width="100px">
+            </a>
+            <p>
+                I like saving money with coupons. Kroger has digital coupons you can load to your card and will be applied at check out in the store. The problem is you have to manually go to the website and click on the coupons to load them to your card. I wrote a Chome
+                extension that will click the coupons after you sign in a visit the coupon page.
+            </p>
         </div>
     </div>
 

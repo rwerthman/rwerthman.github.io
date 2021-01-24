@@ -25,3 +25,7 @@ nav {
 .active {
     background-color: darkgrey;
 }
+
+#personal_projects>div {
+    margin: 10px;
+}
